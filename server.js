@@ -3,9 +3,11 @@ const path = require("path");
 const todoRouter = require("./routers/todoRouter");
 
 const app = express();
+
 const PORT = 4444;
 
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -16,7 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use("/", todoRouter);
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
 
 app.delete('/tasks/clear-completed', (req, res) => {
