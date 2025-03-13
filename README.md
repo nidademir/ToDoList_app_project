@@ -11,7 +11,8 @@
 > node server.js
 
 ## 📂 Proje Yapısı
-```📂 ToDoList_app_project
+```
+📂 ToDoList_app_project
 │── 📂 node_modules
 │── 📂 public
 │   ├── 📂 css (Stil dosyaları)
