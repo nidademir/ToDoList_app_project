@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Sayfa yüklendiğinde görevleri çek ve listeye ekle
     function loadTasks() {
         $.get("http://localhost:5000/tasks", function (tasks) {
             $("#taskList").empty();
@@ -20,7 +19,6 @@ $(document).ready(function () {
         });
     }
 
-    // Filtreleme butonlarına tıklanınca çalışacak
     $(".filter-btn").click(function () {
         let filter = $(this).data("filter");
 
@@ -43,7 +41,6 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    // Görev ekleme
     $("#addTaskBtn").click(function () {
         let taskText = $("#taskInput").val().trim();
         if (taskText === "") return;
@@ -53,7 +50,6 @@ $(document).ready(function () {
         });
     });
 
-    // Görevi tamamlama
     $(document).on("change", ".completeTask", function () {
         let taskId = $(this).closest("li").data("id");
         let completed = $(this).prop("checked");
@@ -69,7 +65,6 @@ $(document).ready(function () {
         });
     });
 
-    // Görev düzenleme
     $(document).on("click", ".editTask", function () {
         let taskId = $(this).closest("li").data("id");
         let newText = prompt("Yeni görev adı:");
@@ -85,7 +80,6 @@ $(document).ready(function () {
         });
     });
 
-    // Görev silme
     $(document).on("click", ".deleteTask", function () {
         let taskId = $(this).closest("li").data("id");
 
@@ -98,7 +92,6 @@ $(document).ready(function () {
         });
     });
 
-    // Yapılan görevleri sil
     $("#clearCompleted").click(function () {
         $.ajax({
             url: "/tasks/clear-completed",
@@ -109,7 +102,6 @@ $(document).ready(function () {
         });
     });
 
-    // Tüm görevleri sil
     $("#clearAll").click(function () {
         $.ajax({
             url: "/tasks",
