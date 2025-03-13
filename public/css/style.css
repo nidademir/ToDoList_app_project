@@ -92,47 +92,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Butonu genişlettik */
-    height: 40px; /* Yükseklik aynı kaldı */
-    background-color: white; /* Arka plan */
-    border: 2px solid #007BFF; /* Mavi çerçeve */
-    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .editTask:hover {
-    background-color: #007BFF; /* Hover'da buton rengi değişsin */
+    background-color: #007BFF;
     color: white;
 }
 
 .editTask i {
-    font-size: 16px; /* İkon boyutu */
+    font-size: 16px;
 }
 
 .deleteTask {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Butonu genişlettik */
-    height: 40px; /* Yükseklik aynı kaldı */
-    background-color: white; /* Arka plan */
-    border: 2px solid #007BFF; /* Mavi çerçeve */
-    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .deleteTask:hover {
-    background-color: #007BFF; /* Hover'da buton rengi değişsin */
+    background-color: #007BFF;
     color: white;
 }
 
 .deleteTask i {
-    font-size: 16px; /* İkon boyutu */
+    font-size: 16px;
 }
-
-
 
 .actions {
     margin-top: 15px;
