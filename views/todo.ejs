@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>TodoInput</h2>
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="New Todo">
+            <button id="addTaskBtn">Add new task</button>
+        </div>
+
+        <h2>TodoList</h2>
+        <div class="filters">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="done">Done</button>
+            <button class="filter-btn" data-filter="todo">Todo</button>
+        </div>
+
+        <ul id="taskList">
+            <% tasks.forEach(task=> { %>
+                <li data-id="<%= task.id %>" class="task-item">
+                    <input type="checkbox" class="completeTask" id="task_<%= task.id %>" name="task_<%= task.id %>" <%= task.completed ? 'checked' : '' %>>
+                    <span class="<%= task.completed ? 'completed' : '' %>"><%= task.text %></span>
+                    <button class="editTask"><i class="fa-solid fa-pencil"></i></button>
+                    <button class="deleteTask"><i class="fa-solid fa-trash"></i></button>
+                </li>
+                <% }) %>
+        </ul>
+
+        <div class="actions">
+            <button id="clearCompleted">Delete done tasks</button>
+            <button id="clearAll">Delete all tasks</button>
+        </div>
+    </div>
+
+    <script src="/js/todo.js"></script>
+</body>
+
+</html>
