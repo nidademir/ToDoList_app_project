@@ -1,0 +1,21 @@
+{
+  "name": "todolist_projesi",
+  "version": "1.0.0",
+  "description": "[GitHub Linki](https://github.com/nidademir/ToDoList_app_project)\r ---",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": ["HTML5, CSS3, JavaScript, jQuery, EJS, Node.js, Express.js"],
+  "author": "Nida Demir",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
