@@ -32,7 +32,8 @@
 ```
 
 ## Kullanılan Teknoloji İsimleri
-```HTML5
+```
+HTML5
 CSS3
 JS
 TYPESCRIPT
