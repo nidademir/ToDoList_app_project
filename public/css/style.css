@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.todo-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 80px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.filter-btn.active {
+    background-color: #28a745;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.completeTask {
+    transform: scale(1.5);
+}
+
+.editTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Butonu genişlettik */
+    height: 40px; /* Yükseklik aynı kaldı */
+    background-color: white; /* Arka plan */
+    border: 2px solid #007BFF; /* Mavi çerçeve */
+    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editTask:hover {
+    background-color: #007BFF; /* Hover'da buton rengi değişsin */
+    color: white;
+}
+
+.editTask i {
+    font-size: 16px; /* İkon boyutu */
+}
+
+.deleteTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Butonu genişlettik */
+    height: 40px; /* Yükseklik aynı kaldı */
+    background-color: white; /* Arka plan */
+    border: 2px solid #007BFF; /* Mavi çerçeve */
+    border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.deleteTask:hover {
+    background-color: #007BFF; /* Hover'da buton rengi değişsin */
+    color: white;
+}
+
+.deleteTask i {
+    font-size: 16px; /* İkon boyutu */
+}
+
+
+
+.actions {
+    margin-top: 15px;
+}
+
+.actions button {
+    background: red;
+    color: white;
+    border: none;
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
