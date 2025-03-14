@@ -1,9 +1,14 @@
 {
   "tasks": [
     {
-      "id": 1741946458919,
-      "text": "Görev düzenlendi",
+      "id": 1741948817653,
+      "text": "Market + petshop alışverişi",
       "completed": true
+    },
+    {
+      "id": 1741948825981,
+      "text": "Doktor randevusu",
+      "completed": false
     }
   ]
 }
