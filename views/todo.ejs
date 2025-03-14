@@ -13,33 +13,34 @@
 
 <body>
     <div class="container">
-        <h2>TodoInput</h2>
+        <h2>Todo List</h2>
         <div class="todo-input">
-            <input type="text" id="taskInput" placeholder="New Todo">
-            <button id="addTaskBtn">Add new task</button>
+            <input type="text" id="taskInput" placeholder="Yeni Görev">
+            <button id="addTaskBtn">Yeni görev ekle</button>
         </div>
 
-        <h2>TodoList</h2>
+        <!-- <h2>Görevler</h2> -->
         <div class="filters">
-            <button class="filter-btn" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="done">Done</button>
-            <button class="filter-btn" data-filter="todo">Todo</button>
+            <button class="filter-btn" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="done">Tamamlanan</button>
+            <button class="filter-btn" data-filter="todo">Yapılacak</button>
         </div>
 
         <ul id="taskList">
             <% tasks.forEach(task=> { %>
                 <li data-id="<%= task.id %>" class="task-item">
-                    <input type="checkbox" class="completeTask" id="task_<%= task.id %>" name="task_<%= task.id %>" <%= task.completed ? 'checked' : '' %>>
+                    <input type="checkbox" class="completeTask" id="task_<%= task.id %>" name="task_<%= task.id %>"<%= task.completed ? 'checked' : '' %>>
                     <span class="<%= task.completed ? 'completed' : '' %>"><%= task.text %></span>
-                    <button class="editTask"><i class="fa-solid fa-pencil"></i></button>
-                    <button class="deleteTask"><i class="fa-solid fa-trash"></i></button>
+                    <div class = "task-eddel">
+                        <button class="editTask"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="deleteTask"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </li>
                 <% }) %>
         </ul>
 
         <div class="actions">
-            <button id="clearCompleted">Delete done tasks</button>
-            <button id="clearAll">Delete all tasks</button>
+            <button id="clearAll">Tümünü sil</button>
         </div>
     </div>
 
