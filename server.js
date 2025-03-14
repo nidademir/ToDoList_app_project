@@ -20,8 +20,3 @@ app.use("/", todoRouter);
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-app.delete('/tasks/clear-completed', (req, res) => {
-    Task.deleteMany({ completed: true })  // Sadece tamamlanmış görevleri siler
-        .then(() => res.status(200).send('Completed tasks deleted successfully'))
-});
