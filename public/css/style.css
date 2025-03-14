@@ -4,12 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: rgb(165, 37, 224);
 }
 
 .container {
     width: 400px;
-    background: white;
+    background: rgb(226, 103, 226);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,13 +24,13 @@ body {
 .todo-input input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #f50dce;
     border-radius: 5px;
 }
 
 .todo-input button {
-    background-color: #007bff;
-    color: white;
+    background-color: #88d3f6;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -45,10 +45,10 @@ body {
 }
 
 .filter-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: #88d3f6;
+    color: rgb(0, 0, 0);
     border: none;
-    width: 80px;
+    width: 110px;
     padding: 10px 15px;
     margin: 5px;
     cursor: pointer;
@@ -75,13 +75,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 8px;
     border-bottom: 1px solid #ddd;
+}
+
+.task-eddel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 5px;
 }
 
 .completed {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(82, 3, 255);
 }
 
 .completeTask {
@@ -95,20 +103,39 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    border: 2px solid #007BFF;
+    border: 2px solid #88d3f6;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .editTask:hover {
-    background-color: #007BFF;
+    background-color: #88d3f6;
     color: white;
 }
 
 .editTask i {
     font-size: 16px;
 }
+
+.editInput {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.saveEdit {
+    background-color: #f9f9f9;
+    width: 30px;
+    height: 30px;
+}
+
+#saveEdit {
+    font-size: 17px;
+  }
 
 .deleteTask {
     display: flex;
@@ -117,14 +144,14 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    border: 2px solid #007BFF;
+    border: 2px solid #88d3f6;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .deleteTask:hover {
-    background-color: #007BFF;
+    background-color: #88d3f6;
     color: white;
 }
 
@@ -137,7 +164,7 @@ body {
 }
 
 .actions button {
-    background: red;
+    background: rgb(68, 6, 241);
     color: white;
     border: none;
     width: 190px;
