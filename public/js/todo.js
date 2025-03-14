@@ -103,15 +103,15 @@ $(document).ready(function () {
     document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".editTask").forEach(button => {
             button.addEventListener("click", function () {
-                let listItem = this.closest(".task-item"); // İlgili liste öğesini al
-                let textSpan = listItem.querySelector(".task-text"); // Mevcut metin
-                let editInput = listItem.querySelector(".editInput"); // Input kutusu
-                let saveButton = listItem.querySelector(".saveTask"); // Kaydet butonu
+                let listItem = this.closest(".task-item"); 
+                let textSpan = listItem.querySelector(".task-text"); 
+                let editInput = listItem.querySelector(".editInput");
+                let saveButton = listItem.querySelector(".saveTask"); 
 
-                textSpan.style.display = "none"; // Mevcut metni gizle
-                editInput.style.display = "inline-block"; // Input'u göster
-                saveButton.style.display = "inline-block"; // Kaydet butonunu göster
-                this.style.display = "none"; // Düzenleme butonunu gizle
+                textSpan.style.display = "none"; 
+                editInput.style.display = "inline-block";
+                saveButton.style.display = "inline-block";
+                this.style.display = "none";
             });
         });
 
@@ -122,11 +122,11 @@ $(document).ready(function () {
                 let editInput = listItem.querySelector(".editInput");
                 let editButton = listItem.querySelector(".editTask");
 
-                textSpan.textContent = editInput.value; // Güncellenmiş metni ekle
-                textSpan.style.display = "inline-block"; // Metni tekrar göster
-                editInput.style.display = "none"; // Input'u gizle
-                this.style.display = "none"; // Kaydet butonunu gizle
-                editButton.style.display = "inline-block"; // Düzenleme butonunu tekrar göster
+                textSpan.textContent = editInput.value; 
+                textSpan.style.display = "inline-block";
+                editInput.style.display = "none"; 
+                this.style.display = "none";
+                editButton.style.display = "inline-block";
             });
         });
     });
