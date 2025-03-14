@@ -4,8 +4,11 @@
 
 ## git clone https://github.com/nidademir/ToDoList_app_project
 
-### Gerekli Bağımlılıkları Yükleyin:
+### Gerekli Bağımlılıkları Yükleyin
 > npm install 
+
+### JSON-Server'ı Çalıştırın
+> json-server --watch db.json --port 4444
 
 ### Sunucuyu Başlatın
 > node server.js
@@ -21,6 +24,8 @@
 │       ├── 📜 todo.js
 │── 📂 routers
 │   ├── 📜 todoRouter.js (Rota dosyası)
+│── 📂 src
+│   ├── 📜 server.ts
 │── 📂 views
 │   ├── 📜 todo.ejs (Ana sayfa)
 │── 📜 .gitignore (Saklı dosyalar)
