@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+    // Görevleri yükler ve listeyi günceller
     function loadTasks() {
         $.get("/tasks", function (tasks) {
             $("#taskList").empty();
@@ -40,6 +42,7 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
+    // Yeni görev ekleme
     $("#addTaskBtn").click(function () {
         let taskText = $("#taskInput").val().trim();
         if (taskText === "") return;
@@ -49,7 +52,7 @@ $(document).ready(function () {
         });
     });
 
-
+    // Görev düzenleme butonu
     $(document).on("click", ".editTask", function () {
         let listItem = $(this).closest("li");
         let taskId = listItem.data("id");
@@ -64,6 +67,7 @@ $(document).ready(function () {
         }
     });
 
+    // Düzenlenen görevi kaydetme
     $(document).on("click", ".saveEdit", function () {
         let listItem = $(this).closest("li");
         let taskId = listItem.data("id");
@@ -84,6 +88,7 @@ $(document).ready(function () {
         });
     });
 
+
     $(document).on("change", ".completeTask", function () {
         let taskId = $(this).closest("li").data("id");
         let completed = $(this).prop("checked");
@@ -99,8 +104,10 @@ $(document).ready(function () {
         });
     });
 
-
+    // Sayfa tamamen yüklendiğinde bu kod çalışır
     document.addEventListener("DOMContentLoaded", function () {
+        
+        // .editTask butonuna olay dinleyicisi ekledik
         document.querySelectorAll(".editTask").forEach(button => {
             button.addEventListener("click", function () {
                 let listItem = this.closest(".task-item"); 
@@ -115,6 +122,7 @@ $(document).ready(function () {
             });
         });
 
+        // .saveTask butonuna olay dinleyicisi ekledik
         document.querySelectorAll(".saveTask").forEach(button => {
             button.addEventListener("click", function () {
                 let listItem = this.closest(".task-item");
@@ -131,7 +139,7 @@ $(document).ready(function () {
         });
     });
 
-
+    // Görev silme işlemi
     $(document).on("click", ".deleteTask", function () {
         let taskId = $(this).closest("li").data("id");
 
@@ -144,6 +152,7 @@ $(document).ready(function () {
         });
     });
 
+    // Tüm görevleri silme
     $("#clearAll").click(function () {
         $.ajax({
             url: "/tasks",
