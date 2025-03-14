@@ -4,12 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(165, 37, 224);
+    background-color: rgb(28, 136, 66);
 }
 
 .container {
     width: 400px;
-    background: rgb(226, 103, 226);
+    background: rgb(82, 227, 198);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,13 +24,13 @@ body {
 .todo-input input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #f50dce;
+    border: 1px solid #065d2d;
     border-radius: 5px;
 }
 
 .todo-input button {
-    background-color: #88d3f6;
-    color: rgb(0, 0, 0);
+    background-color: #3a7e30;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -45,8 +45,8 @@ body {
 }
 
 .filter-btn {
-    background-color: #88d3f6;
-    color: rgb(0, 0, 0);
+    background-color: #3a7e30;
+    color: rgb(255, 255, 255);
     border: none;
     width: 110px;
     padding: 10px 15px;
@@ -56,7 +56,7 @@ body {
 }
 
 .filter-btn:hover {
-    background-color: #0056b3;
+    background-color: #079e9c;
 }
 
 .filter-btn.active {
@@ -89,7 +89,7 @@ body {
 
 .completed {
     text-decoration: line-through;
-    color: rgb(82, 3, 255);
+    color: rgb(4, 92, 36);
 }
 
 .completeTask {
@@ -103,14 +103,14 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    border: 2px solid #88d3f6;
+    border: 2px solid #3a7e30;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .editTask:hover {
-    background-color: #88d3f6;
+    background-color: #079e9c;
     color: white;
 }
 
@@ -144,14 +144,14 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    border: 2px solid #88d3f6;
+    border: 2px solid #3a7e30;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .deleteTask:hover {
-    background-color: #88d3f6;
+    background-color: #079e9c;
     color: white;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 .actions button {
-    background: rgb(68, 6, 241);
+    background: rgb(1, 104, 64);
     color: white;
     border: none;
     width: 190px;
@@ -173,3 +173,7 @@ body {
     cursor: pointer;
 }
 
+.actions button:hover {
+    background-color: #079e9c;
+    color: white;
+}
