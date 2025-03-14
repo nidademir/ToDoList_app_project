@@ -24,8 +24,6 @@
 │       ├── 📜 todo.js
 │── 📂 routers
 │   ├── 📜 todoRouter.js (Rota dosyası)
-│── 📂 src
-│   ├── 📜 server.ts
 │── 📂 views
 │   ├── 📜 todo.ejs (Ana sayfa)
 │── 📜 .gitignore (Saklı dosyalar)
@@ -41,9 +39,11 @@
 HTML5
 CSS3
 JS
-TYPESCRIPT
 EJS
 NODE JS
 EXPRESS JS
 GIT/GITHUB
 ```
+
+## Görseller
+![To-Do List Uygulaması](images/todo-app-1.png)
