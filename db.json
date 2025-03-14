@@ -1,13 +1,13 @@
 {
   "tasks": [
     {
-      "id": 1741948817653,
-      "text": "Market + petshop alışverişi",
-      "completed": true
-    },
-    {
       "id": 1741948825981,
       "text": "Doktor randevusu",
+      "completed": false
+    },
+    {
+      "id": 1741981822197,
+      "text": "Market alışverişi",
       "completed": false
     }
   ]
