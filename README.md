@@ -16,6 +16,9 @@
 ## 📂 Proje Yapısı
 ```
 📂 ToDoList_app_project
+│── 📂 images
+│       ├── 📜 todo-app-1.png
+│       ├── 📜 todo-app-2.png
 │── 📂 node_modules
 │── 📂 public
 │   ├── 📂 css (Stil dosyaları)
