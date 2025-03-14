@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    
+    <!-- CSS dosyasını bağladık -->
     <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- JQuery kütüphanesini ekledik -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Font Awesome ikon kütüphanesini ekledik -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -14,11 +20,14 @@
 <body>
     <div class="container">
         <h2>Todo List</h2>
+        
+        <!-- Yeni görev ekleme alanı -->
         <div class="todo-input">
             <input type="text" id="taskInput" placeholder="Yeni Görev">
             <button id="addTaskBtn">Yeni görev ekle</button>
         </div>
 
+        <!-- Filtreleme butonları -->
         <div class="filters">
             <button class="filter-btn" data-filter="all">Tümü</button>
             <button class="filter-btn" data-filter="done">Tamamlanan</button>
@@ -30,6 +39,8 @@
                 <li data-id="<%= task.id %>" class="task-item">
                     <input type="checkbox" class="completeTask" id="task_<%= task.id %>" name="task_<%= task.id %>"<%= task.completed ? 'checked' : '' %>>
                     <span class="<%= task.completed ? 'completed' : '' %>"><%= task.text %></span>
+                    
+                    <!-- Düzenleme ve silme butonları -->
                     <div class = "task-eddel">
                         <button class="editTask"><i class="fa-solid fa-pencil"></i></button>
                         <button class="deleteTask"><i class="fa-solid fa-trash"></i></button>
@@ -38,11 +49,13 @@
                 <% }) %>
         </ul>
 
+        <!-- Tüm görevleri silme butonu -->
         <div class="actions">
             <button id="clearAll">Tümünü sil</button>
         </div>
     </div>
 
+    <!-- JavaScript dosyasını bağladık -->
     <script src="/js/todo.js"></script>
 </body>
 
