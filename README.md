@@ -46,4 +46,4 @@ GIT/GITHUB
 ```
 
 ## Görseller
-![To-Do List Uygulaması](images/todo-app-1.png){ width=200px }
+![To-Do List Uygulaması](images/todo-app-1.png){ width=100px }
