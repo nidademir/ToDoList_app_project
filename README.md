@@ -45,6 +45,6 @@ EXPRESS JS
 GIT/GITHUB
 ```
 
-## Görseller
+## Uygulama Görselleri
 ![To-Do List Uygulaması](images/todo-app-1.png)
 ![To-Do List Uygulaması](images/todo-app-2.png)
